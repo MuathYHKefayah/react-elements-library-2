@@ -1,6 +1,6 @@
 {
   "name": "@MuathYHKefayah/react-elements-library-tsdx",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Made with tsdx",
   "author": "MuathYHKefayah",
   "license": "MIT",
@@ -22,9 +22,9 @@
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "storybook": "sb dev",
-    "build-storybook": "sb build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -53,12 +53,16 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.23.2",
+    "@muathyhkefayah/react-elements-library-crl": "^3.0.0",
     "@size-limit/preset-small-lib": "^9.0.0",
-    "@storybook/addon-essentials": "^7.4.6",
-    "@storybook/addon-info": "^5.3.21",
-    "@storybook/addon-links": "^7.4.6",
-    "@storybook/addons": "^7.4.6",
-    "@storybook/react": "^7.4.6",
+    "@storybook/addon-essentials": "^7.5.1",
+    "@storybook/addon-interactions": "^7.5.1",
+    "@storybook/addon-links": "^7.5.1",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.5.1",
+    "@storybook/react": "^7.5.1",
+    "@storybook/react-vite": "^7.5.1",
+    "@storybook/testing-library": "^0.2.2",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.5.1",
@@ -71,12 +75,13 @@
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
     "size-limit": "^9.0.0",
+    "storybook": "^7.5.1",
     "tsdx": "^0.14.1",
     "tslib": "^2.6.2",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
-  },
-  "dependencies": {}
+  }
 }
